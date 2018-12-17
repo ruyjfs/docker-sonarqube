@@ -13,8 +13,8 @@ services:
     ports:
      - "${WEB_PORT}:9000"
     networks:
-      - dev.engesoftware.com.br
+      - ${NETWORK}
 networks:
   dev.engesoftware.com.br:
     external:
-      name: dev.engesoftware.com.br
+      name: ${NETWORK}
