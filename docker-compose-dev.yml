@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3'
 services:
   web:
     image: sonarqube
@@ -7,25 +7,15 @@ services:
       - ./conf:/opt/sonarqube/conf
       - ./data:/opt/sonarqube/data
       - ./logs:/opt/sonarqube/logs
-      - ./extensions:/opt/sonarqube/extensions
     environment:
     - SONARQUBE_JDBC_URL=jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_SCHEMA}
     - SONARQUBE_JDBC_USERNAME=${DB_USER}
     - SONARQUBE_JDBC_PASSWORD=${DB_PASSWORD}
     ports:
      - "${WEB_PORT}:9000"
-    links:
-      - db:db
-    depends_on:
-      - db
-  db:
-    container_name: ${APP_NAME}-db
-    image: postgres:alpine
-    environment:
-      POSTGRES_DB: ${DB_SCHEMA}
-      POSTGRES_USER: ${DB_USER}
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
-    ports:
-    - 5432:5432
-    tty: true
-    restart: on-failure
+    networks:
+      - engesoftware.com.br
+networks:
+  engesoftware.com.br:
+    external:
+      name: engesoftware.com.br
