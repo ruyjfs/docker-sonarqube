@@ -1,7 +1,7 @@
 version: '3.5'
 services:
   web:
-    image: sonarqube
+    image: ${IMAGE}
     container_name: ${APP_NAME}
     volumes:
       - ./conf:/opt/sonarqube/conf
