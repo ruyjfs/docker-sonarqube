@@ -22,9 +22,9 @@ services:
     container_name: ${APP_NAME}-db
     image: postgres:alpine
     environment:
-      POSTGRES_DB: ${DB_SCHEMA}
-      POSTGRES_USER: ${DB_USER}
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${APP_NAME}
+      POSTGRES_USER: ${APP_NAME}
+      POSTGRES_PASSWORD: ${APP_NAME}
     ports:
     - 5432:5432
     tty: true

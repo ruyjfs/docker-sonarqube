@@ -14,3 +14,18 @@ services:
     - SONARQUBE_JDBC_PASSWORD=${DB_PASSWORD}
     ports:
      - "${WEB_PORT}:9000"
+    links:
+      - db:db
+    depends_on:
+      - db
+  db:
+    container_name: ${APP_NAME}-db
+    image: postgres:alpine
+    environment:
+      POSTGRES_DB: ${APP_NAME}
+      POSTGRES_USER: ${APP_NAME}
+      POSTGRES_PASSWORD: ${APP_NAME}
+    ports:
+    - 5433:5432
+    tty: true
+    restart: on-failure
