@@ -26,6 +26,6 @@ services:
       POSTGRES_USER: ${APP_NAME}
       POSTGRES_PASSWORD: ${APP_NAME}
     ports:
-    - 5433:5432
+    - ${DB_PORT}:5432
     tty: true
     restart: on-failure
