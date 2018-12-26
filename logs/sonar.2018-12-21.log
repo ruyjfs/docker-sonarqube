@@ -1,0 +1,36 @@
+2018.12.21 20:18:35 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2018.12.21 20:18:35 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2018.12.21 20:18:35 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch -Epath.conf=/opt/sonarqube/temp/conf/es
+2018.12.21 20:18:35 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2018.12.21 20:18:36 INFO  app[][o.e.p.PluginsService] no modules loaded
+2018.12.21 20:18:36 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018.12.21 20:18:50 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2018.12.21 20:18:50 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.security.egd=file:/dev/./urandom -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process3335297578211684026properties
+2018.12.21 20:19:43 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2018.12.21 20:19:43 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process190286249957153271properties
+2018.12.21 20:19:53 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2018.12.21 20:19:53 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2018.12.21 20:20:47 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2018.12.21 20:20:47 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2018.12.21 20:20:47 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch -Epath.conf=/opt/sonarqube/temp/conf/es
+2018.12.21 20:20:47 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2018.12.21 20:20:48 INFO  app[][o.e.p.PluginsService] no modules loaded
+2018.12.21 20:20:48 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018.12.21 20:21:10 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2018.12.21 20:21:10 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.security.egd=file:/dev/./urandom -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process4018853384646147023properties
+2018.12.21 20:21:34 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2018.12.21 20:21:34 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process3525403505442645528properties
+2018.12.21 20:21:43 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2018.12.21 20:21:43 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2018.12.21 21:07:28 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2018.12.21 21:07:28 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2018.12.21 21:07:28 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch -Epath.conf=/opt/sonarqube/temp/conf/es
+2018.12.21 21:07:28 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2018.12.21 21:07:29 INFO  app[][o.e.p.PluginsService] no modules loaded
+2018.12.21 21:07:29 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018.12.21 21:08:09 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2018.12.21 21:08:09 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.security.egd=file:/dev/./urandom -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process1309456409875526217properties
+2018.12.21 21:08:32 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2018.12.21 21:08:32 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process9098760131260925984properties
+2018.12.21 21:08:46 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2018.12.21 21:08:46 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
