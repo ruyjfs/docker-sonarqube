@@ -13,9 +13,9 @@ services:
     - SONARQUBE_JDBC_PASSWORD=${DB_PASSWORD}
     ports:
      - "${WEB_PORT}:9000"
-    networks:
-      - engesoftware.com.br
-networks:
-  engesoftware.com.br:
-    external:
-      name: engesoftware.com.br
+    # networks:
+    #   - dominio.com.br
+# networks:
+#   dominio.com.br:
+#     external:
+#       name: dominio.com.br
